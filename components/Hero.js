@@ -9,7 +9,7 @@ const Hero = () => (
           className="d-block w-100"
           alt="First slide"
           imageUrl="https://i5.wal.co/dfw/4ff9c6c9-cc0f/k2-_2add2578-1f56-46f5-b4cf-23918338b919.v1.jpg-b3adfa4bd51eea13f8a387c533d57254b7bcd7fc-optim-1360x410.jpg"
-          sizes={[760]}
+          sizes={[375, 760, 1280]}
         />
       </div>
       <div className="carousel-item">
