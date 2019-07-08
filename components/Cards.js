@@ -50,7 +50,7 @@ const CATEGORIES = [
 ];
 
 const Row = ({ row }) => row.map(cardProps => (
-  <div className="col-sm">
+  <div className="col-sm" key={cardProps.title}>
     <Card {...cardProps} />
   </div>
 ));
@@ -59,7 +59,7 @@ const Cards = () => (
   <>
     <h2 className="text-center">Shop by Categories</h2>
     {CATEGORIES.map(row => (
-      <div className="row">
+      <div className="row" key={row.title}>
         <Row row={row} />
       </div>
     ))}

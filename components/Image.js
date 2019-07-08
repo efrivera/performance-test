@@ -7,7 +7,8 @@ const Image = ({
   sizes,
   ...rest
 }) => {
-  const odnUrl = `${imageUrl}?odnWidth=${sizes[0]}`;
+  const [size] = sizes;
+  const odnUrl = `${imageUrl}?odnWidth=${size}`;
 
   return (
     <img src={odnUrl} alt={alt} {...rest} />
