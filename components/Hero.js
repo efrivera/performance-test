@@ -1,8 +1,9 @@
 import React from 'react';
 import Image from './Image';
+import styles from './styles.scss';
 
 const Hero = () => (
-  <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+  <div id="carouselExampleControls" className={`carousel slide ${styles.container}`} data-ride="carousel">
     <div className="carousel-inner">
       <div className="carousel-item active">
         <Image

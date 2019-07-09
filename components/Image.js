@@ -34,7 +34,6 @@ const Image = ({
     isMobile,
     isTablet,
   } = useContext(DeviceContext);
-  console.log('isMobile:', isMobile, 'isTablet:', isTablet);
   const size = getSize({
     sizes,
     isMobile,
